@@ -89,7 +89,7 @@
                             <td>{!! $item->description !!}</td>
                             @if (session()->get('_user.packages') != 'empty')
                                 <td>
-                                    <form action="{{ route('home.reg ') }}" method="post">
+                                    <form action="{{ route('home.reg') }}" method="post">
                                         @csrf
                                         <input type="hidden" name="package" value="{{ $item->package_code }}">
                                         <button type="submit" class="btn btn-primary">Đăng ký</button>
