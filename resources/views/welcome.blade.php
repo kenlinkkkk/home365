@@ -62,9 +62,9 @@
                         <th class="hidden-content">Giá cước (VNĐ)</th>
                         <th class="hidden-content">Thời hạn sử dụng (ngày)</th>
                         <th>Quyền lợi trên: vlearn.edu.vn</th>
-{{--                        @if(session()->get('_user.packages') != 'empty')--}}
-{{--                            <th>Đăng ký</th>--}}
-{{--                        @endif--}}
+                        @if(session()->get('_user.packages') != 'empty')
+                            <th>Đăng ký</th>
+                        @endif
                     </tr>
                     </thead>
                     <tbody>
@@ -75,9 +75,9 @@
                         <td class="hidden-content"></td>
                         <td class="hidden-content"></td>
                         <td></td>
-{{--                        @if (session()->get('_user.packages') != 'empty')--}}
-{{--                            <td></td>--}}
-{{--                        @endif--}}
+                        @if (session()->get('_user.packages') != 'empty')
+                            <td></td>
+                        @endif
                     </tr>
                     @foreach($packages as $item)
                         <tr>
@@ -87,9 +87,15 @@
                             <td class="hidden-content">{{ $item->price }}</td>
                             <td class="hidden-content">{{ $item->duration }}</td>
                             <td>{!! $item->description !!}</td>
-{{--
---}}
-
+                            @if (session()->get('_user.packages') != 'empty')
+                                <td>
+                                    <form action="{{ route('home.reg ') }}" method="post">
+                                        @csrf
+                                        <input type="hidden" name="package" value="{{ $item->package_code }}">
+                                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                                    </form>
+                                </td>
+                            @endif
                         </tr>
                     @endforeach
                     <tr class="font-weight-bold hidden-content">
@@ -99,9 +105,9 @@
                         <td class="hidden-content">0-100.000</td>
                         <td class="hidden-content">1</td>
                         <td></td>
-{{--                        @if (session()->get('_user.packages') != 'empty')--}}
-{{--                            <td></td>--}}
-{{--                        @endif--}}
+                        @if (session()->get('_user.packages') != 'empty')
+                            <td></td>
+                        @endif
                     </tr>
                     <tr class="font-weight-bold hidden-content">
                         <td class="hidden-content">3</td>
@@ -110,9 +116,9 @@
                         <td class="hidden-content"></td>
                         <td class="hidden-content"></td>
                         <td></td>
-{{--                        @if (session()->get('_user.packages') != 'empty')--}}
-{{--                            <td></td>--}}
-{{--                        @endif--}}
+                        @if (session()->get('_user.packages') != 'empty')
+                            <td></td>
+                        @endif
                     </tr>
                     <tr class="font-weight-bold hidden-content">
                         <td class="hidden-content">4</td>
@@ -121,9 +127,9 @@
                         <td class="hidden-content"></td>
                         <td class="hidden-content"></td>
                         <td></td>
-{{--                        @if (session()->get('_user.packages') != 'empty')--}}
-{{--                            <td></td>--}}
-{{--                        @endif--}}
+                        @if (session()->get('_user.packages') != 'empty')
+                            <td></td>
+                        @endif
                     </tr>
                     </tbody>
                 </table>
