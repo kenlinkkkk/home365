@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div id="customButton" class="d-flex align-content-center">
-                <a href="{{ route('home.course.listCourse') }}">
+                <a href="https://home365.vn/web/login.jsp">
                     <svg class="icon-arrow before">
                         <use xlink:href="#arrow"></use>
                     </svg>
