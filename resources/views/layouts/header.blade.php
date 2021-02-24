@@ -38,7 +38,7 @@
                             @endforeach
                         @endif
                     @if(session()->get('_user')['msisdn'] == 'empty' || empty(session()->get('_user')['msisdn']))
-                            <li class="nav-item"><a href="{{ route('home.showLogin') }}" class="nav-link"><span>Đăng nhập</span></a></li>
+                            <li class="nav-item"><a href="https://home365.vn/web/login.jsp" class="nav-link"><span>Đăng nhập</span></a></li>
                     @endif
                 </ul>
             </div>
