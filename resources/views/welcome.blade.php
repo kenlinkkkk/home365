@@ -21,9 +21,7 @@
                 </div>
                 <div class="col-md-9 col-sm-6">
                     <div class="m-5 text-justify">
-                        <h3 class="m-auto"><strong>Dịch vụ Vlearn - </strong>Kết nối tri thức mọi lúc mọi nơi là nơi dịch giúp các thuê bao
-                            đăng ký dịch vụ tham gia các khóa học, bài giảng đa dạng chủ đề, lĩnh vực, cấp độ từ các chuyên
-                            gia hàng đầu trên mô hình khóa học trực tuyến.</h3>
+                        <h3 class="m-auto"><strong>Dịch vụ Home365 - </strong>là một ứng dụng học trực tuyến cho học sinh Tiểu học, là công cụ hỗ trợ cho học sinh ôn tập và củng cố kiến thức đã học trên lớp thông qua các bài tập về nhà. Nội dung 3 bộ môn Toán, Tiếng Việt, Tiếng Anh theo chuẩn của Bộ Giáo dục & Đào tạo, đón đầu sách giáo khoa tiểu học.</h3>
                     </div>
                 </div>
             </div>
