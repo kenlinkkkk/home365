@@ -98,17 +98,6 @@
                     @endforeach
                     <tr class="font-weight-bold hidden-content">
                         <td class="hidden-content">2</td>
-                        <td>Cước mua lẻ</td>
-                        <td class="hidden-content"></td>
-                        <td class="hidden-content">0-100.000</td>
-                        <td class="hidden-content">1</td>
-                        <td></td>
-                        @if (session()->get('_user.packages') != 'empty')
-                            <td></td>
-                        @endif
-                    </tr>
-                    <tr class="font-weight-bold hidden-content">
-                        <td class="hidden-content">3</td>
                         <td>Cước data</td>
                         <td class="hidden-content">Tính cước theo quy định khi chưa đăng ký gói thành viên trả phí</td>
                         <td class="hidden-content"></td>
@@ -119,7 +108,7 @@
                         @endif
                     </tr>
                     <tr class="font-weight-bold hidden-content">
-                        <td class="hidden-content">4</td>
+                        <td class="hidden-content">3</td>
                         <td>Cước nhắn tới đầu số 9285</td>
                         <td class="hidden-content">Miễn phí</td>
                         <td class="hidden-content"></td>
