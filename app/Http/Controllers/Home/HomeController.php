@@ -47,7 +47,7 @@ class HomeController extends Controller
     public function regSubmit(Request $request)
     {
         $data = $request->except('_token');
-        $url = 'http://dangky.mobiedu.vn/dangky/api/register.jsp?sub='. $data['package'];
+        $url = 'http://dangky.mobiedu.vn/api/register.jsp?sub='. $data['package'];
 
         return Redirect::away($url);
     }

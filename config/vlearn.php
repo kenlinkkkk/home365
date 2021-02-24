@@ -1,7 +1,7 @@
 <?php
 return [
-    'service_id' => 42,
+    'service_id' => 30,
     'encrypt'  => [
-        'key' => 'fxm8bTI0zxaaYMxJ'
+        'key' => '8bfE1H1LzO8N2D0c'
     ],
 ];

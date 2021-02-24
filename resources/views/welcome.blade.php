@@ -21,12 +21,14 @@
                 </div>
                 <div class="col-md-9 col-sm-6">
                     <div class="m-5 text-justify">
-                        <h3 class="m-auto"><strong>Dịch vụ Home365 - </strong>là một ứng dụng học trực tuyến cho học sinh Tiểu học, là công cụ hỗ trợ cho học sinh ôn tập và củng cố kiến thức đã học trên lớp thông qua các bài tập về nhà. Nội dung 3 bộ môn Toán, Tiếng Việt, Tiếng Anh theo chuẩn của Bộ Giáo dục & Đào tạo, đón đầu sách giáo khoa tiểu học.</h3>
+                        <h3 class="m-auto"><strong>Dịch vụ Vlearn - </strong>Kết nối tri thức mọi lúc mọi nơi là nơi dịch giúp các thuê bao
+                            đăng ký dịch vụ tham gia các khóa học, bài giảng đa dạng chủ đề, lĩnh vực, cấp độ từ các chuyên
+                            gia hàng đầu trên mô hình khóa học trực tuyến.</h3>
                     </div>
                 </div>
             </div>
             <div id="customButton" class="d-flex align-content-center">
-                <a href="https://home365.vn/web/login.jsp">
+                <a href="{{ route('home.course.listCourse') }}">
                     <svg class="icon-arrow before">
                         <use xlink:href="#arrow"></use>
                     </svg>
@@ -59,10 +61,10 @@
                         <th class="hidden-content">Mã gói</th>
                         <th class="hidden-content">Giá cước (VNĐ)</th>
                         <th class="hidden-content">Thời hạn sử dụng (ngày)</th>
-                        <th>Quyền lợi</th>
-                        @if(session()->get('_user.packages') != 'empty')
-                            <th>Đăng ký</th>
-                        @endif
+                        <th>Quyền lợi trên: vlearn.edu.vn</th>
+{{--                        @if(session()->get('_user.packages') != 'empty')--}}
+{{--                            <th>Đăng ký</th>--}}
+{{--                        @endif--}}
                     </tr>
                     </thead>
                     <tbody>
@@ -73,9 +75,9 @@
                         <td class="hidden-content"></td>
                         <td class="hidden-content"></td>
                         <td></td>
-                        @if (session()->get('_user.packages') != 'empty')
-                           <td></td>
-                        @endif
+{{--                        @if (session()->get('_user.packages') != 'empty')--}}
+{{--                            <td></td>--}}
+{{--                        @endif--}}
                     </tr>
                     @foreach($packages as $item)
                         <tr>
@@ -85,29 +87,43 @@
                             <td class="hidden-content">{{ $item->price }}</td>
                             <td class="hidden-content">{{ $item->duration }}</td>
                             <td>{!! $item->description !!}</td>
+{{--
+--}}
+
                         </tr>
                     @endforeach
                     <tr class="font-weight-bold hidden-content">
                         <td class="hidden-content">2</td>
+                        <td>Cước mua lẻ</td>
+                        <td class="hidden-content"></td>
+                        <td class="hidden-content">0-100.000</td>
+                        <td class="hidden-content">1</td>
+                        <td></td>
+{{--                        @if (session()->get('_user.packages') != 'empty')--}}
+{{--                            <td></td>--}}
+{{--                        @endif--}}
+                    </tr>
+                    <tr class="font-weight-bold hidden-content">
+                        <td class="hidden-content">3</td>
                         <td>Cước data</td>
                         <td class="hidden-content">Tính cước theo quy định khi chưa đăng ký gói thành viên trả phí</td>
                         <td class="hidden-content"></td>
                         <td class="hidden-content"></td>
                         <td></td>
-                       @if (session()->get('_user.packages') != 'empty')
-                            <td></td>
-                        @endif
+{{--                        @if (session()->get('_user.packages') != 'empty')--}}
+{{--                            <td></td>--}}
+{{--                        @endif--}}
                     </tr>
                     <tr class="font-weight-bold hidden-content">
-                        <td class="hidden-content">3</td>
+                        <td class="hidden-content">4</td>
                         <td>Cước nhắn tới đầu số 9285</td>
                         <td class="hidden-content">Miễn phí</td>
                         <td class="hidden-content"></td>
                         <td class="hidden-content"></td>
                         <td></td>
-                        @if (session()->get('_user.packages') != 'empty')
-                            <td></td>
-                        @endif
+{{--                        @if (session()->get('_user.packages') != 'empty')--}}
+{{--                            <td></td>--}}
+{{--                        @endif--}}
                     </tr>
                     </tbody>
                 </table>
