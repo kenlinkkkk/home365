@@ -54,7 +54,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/backurl', 'Home\HomeController@backUrl')->name('back-url');
 
-//Route::middleware('isdn')->group(function () {
+Route::middleware('isdn')->group(function () {
     Route::prefix('/')->name('home.')->group(function () {
         Route::get('/', 'Home\HomeController@index')->name('index');
         Route::get('/dang-nhap', 'Home\HomeController@showLogin')->name('showLogin');
@@ -76,4 +76,4 @@ Route::get('/backurl', 'Home\HomeController@backUrl')->name('back-url');
         Route::post('/post-login', 'Home\ClientController@localLogin')->name('postLogin');
         Route::post('/post-logout', 'Home\ClientController@clientLogout')->name('postLogout');
     });
-//});
+});
