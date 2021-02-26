@@ -31,8 +31,6 @@ class HomeController extends Controller
 
         if (session()->get('_user')['msisdn'] != 'empty') {
             $response = $this->getPackageSubs(session()->get('_user')['msisdn']);
-            dd($response);
-            die();
             session()->put('_user', [
                 'msisdn' => session()->get('_user')['msisdn'],
                 'packages' => $response
