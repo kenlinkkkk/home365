@@ -194,7 +194,9 @@ class HomeController extends Controller
                     array_push($pkg, $item->packageCode);
                 }
             }
+            return $pkg;
+        } else {
+            return 'empty';
         }
-        return $pkg;
     }
 }
