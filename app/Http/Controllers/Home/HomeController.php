@@ -36,7 +36,8 @@ class HomeController extends Controller
                 'packages' => $response
             ]);
         }
-
+        dd(session()->all());
+        die();
         $data = compact(
             'pages',
             'packages'

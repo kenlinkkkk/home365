@@ -17,7 +17,7 @@
                                 Xin chào: {{ '*****'. substr(session()->get('_user')['msisdn'], -3) }}
                             </a>
                             <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                <a href="{{ route('home.showProfile') }}" class="dropdown-item m-2 text-white">Thông tin cá nhân</a>
+{{--                                <a href="{{ route('home.showProfile') }}" class="dropdown-item m-2 text-white">Thông tin cá nhân</a>--}}
                                 <div class="dropdown-divider"></div>
                                 <form action="{{ route('home.postLogout') }}" method="post">
                                     @csrf
