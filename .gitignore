@@ -1,0 +1,17 @@
+/node_modules
+/public/hot
+/public/uploads
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+dev.vlearn.vn*
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+dev.home365.vn.wxproj
+dev.home365.vn.wxtask
