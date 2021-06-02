@@ -6,7 +6,7 @@
 
 @section('content')
     <section>
-        <div class="hero-wrap js-fullheight">
+        <div class="hero-wrap">
             <div class="container-fluid p-0">
                 <img src="{{ asset('assets/client/img/images/banner-mathx.png') }}" class="img-fluid">
             </div>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div id="customButton" class="d-flex align-content-center">
-                <a href="https://home365.vn/web/login.jsp">
+                <a href="https://mathx.vn/dang-nhap.html">
                     <svg class="icon-arrow before">
                         <use xlink:href="#arrow"></use>
                     </svg>
