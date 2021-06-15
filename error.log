@@ -1,0 +1,6 @@
+[22-Mar-2021 03:22:54 UTC] PHP Warning:  require(D:\Winginx\home\dev.home365.vn/vendor/autoload.php): failed to open stream: No such file or directory in D:\Winginx\home\dev.home365.vn\artisan on line 18
+[22-Mar-2021 03:22:54 UTC] PHP Stack trace:
+[22-Mar-2021 03:22:54 UTC] PHP   1. {main}() D:\Winginx\home\dev.home365.vn\artisan:0
+[22-Mar-2021 03:22:54 UTC] PHP Fatal error:  require(): Failed opening required 'D:\Winginx\home\dev.home365.vn/vendor/autoload.php' (include_path='.;C:\php\pear') in D:\Winginx\home\dev.home365.vn\artisan on line 18
+[22-Mar-2021 03:22:54 UTC] PHP Stack trace:
+[22-Mar-2021 03:22:54 UTC] PHP   1. {main}() D:\Winginx\home\dev.home365.vn\artisan:0
