@@ -77,7 +77,7 @@ class HomeController extends Controller
             $curl = curl_init();
 
             curl_setopt_array($curl, array(
-                CURLOPT_URL => "http://api.edusite.vn/v1/api/logUse",
+                CURLOPT_URL => "http://api.edusite.vn/v2/api/logUse",
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => "",
                 CURLOPT_MAXREDIRS => 10,
@@ -117,7 +117,7 @@ class HomeController extends Controller
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "http://api.edusite.vn/v1/api/logUse",
+            CURLOPT_URL => "http://api.edusite.vn/v2/api/logUse",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
